@@ -1,0 +1,37 @@
+{
+  "name": "@protokol11/pi-todo-state",
+  "version": "0.1.0",
+  "description": "Append-only, concurrency-safe todo board for pi sessions: event log plus deterministic fold.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/protokol11/pi-todo-state.git"
+  },
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-extension",
+    "agent-governance",
+    "todo-state",
+    "todo",
+    "event-log"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.1",
+    "tsx": "^4.19.0",
+    "typescript": "^7.0.2"
+  }
+}
